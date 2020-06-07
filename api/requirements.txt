@@ -1,0 +1,6 @@
+flask
+flask_restful
+pymongo
+spacy
+bcrypt
+python-box

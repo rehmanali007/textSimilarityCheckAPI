@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    api:
+        build: ./api
+        ports:
+            - "5000:5000"
+        volumes:
+            - .:/usr/src/app/api
+        # depends_on:
+        #     - db
+        links:
+            - db
+        command: python app.py
+    db:
+        build: ./db
